@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>IES Dona Leonor de Guzman</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.jpg"/>
+	<link rel="stylesheet" href="style.general.css">
+</head>
+
+<body>
+	<h1>I.E.S. Doña Leonor de Guzmán</h1>
+	<h2>Instituto de Educación Secundaria</h2>
+	<hr size="8px" color="black" id="base">
+
+	<center><img src="https://www.juntadeandalucia.es/averroes/centros-tic/41701547/helvia/sitio/upload/img/DSC03013.jpg" width="600"></center>
+	<left><a href="https://www.juntadeandalucia.es">juntadeandalucia</a></left>
+	<hr size="6px" color=#ff33ad>
+	
+	<table border="2px">
+	<tr>
+	<th>Enseñanzas</th>
+	</tr>
+	<tr>
+	<td>1º ESO</td>
+	</tr>
+	<tr>
+	<td>2º ESO</td>
+	</tr>
+	<tr>
+	<td>3º ESO</td>
+	</tr>
+	<tr>
+	<td>4º ESO</td>
+	</tr>
+	<tr>
+	<td>FP y Ciclos</td>
+	</tr>
+	</table>
+	
+	<select id="myDropdown">
+  		<option value="eso/1.html">1º ESO</option>
+  		<option value="eso/2.html">2º ESO</option>
+  		<option value="eso/3.html">3º ESO</option>
+		<option value="eso/4.html">4º ESO</option>
+		<option value="fp/fp.html">FP y Ciclos</option>
+	</select>
+	<button id="myButton">Go</button>
+</body>
+<script>
+  const dropdown = document.getElementById("myDropdown");
+  const button = document.getElementById("myButton");
+
+  button.addEventListener("click", function() {
+    const selectedPage = dropdown.value;
+    if (selectedPage) {
+      window.location.href = selectedPage;
+    }
+  });
+</script>
+</html>

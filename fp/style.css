@@ -1,0 +1,21 @@
+body {
+    background-image: url("bgi.jpg");
+}
+p{
+    color: aqua;
+}
+h1{
+    color:crimson
+}
+h2{
+    color:antiquewhite
+}
+a{
+    color:deepskyblue;
+}
+#subject-list{
+	color: aquamarine;
+}
+#opt-subject-list{
+    color: rgb(0, 153, 255);
+}
